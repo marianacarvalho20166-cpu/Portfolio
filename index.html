@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana Gomes Carvalho | Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Navegação lateral fixa -->
+    <nav class="side-nav" id="sideNav">
+        <div class="side-nav-top">
+            <span class="monogram">MG</span>
+        </div>
+        <ul class="side-nav-links">
+            <li><a href="#inicio" class="nav-dot active" data-label="Início"><span></span></a></li>
+            <li><a href="#sobre" class="nav-dot" data-label="Sobre"><span></span></a></li>
+            <li><a href="#experiencia" class="nav-dot" data-label="Experiência"><span></span></a></li>
+            <li><a href="#habilidades" class="nav-dot" data-label="Habilidades"><span></span></a></li>
+            <li><a href="#contato" class="nav-dot" data-label="Contato"><span></span></a></li>
+        </ul>
+        <div class="side-nav-bottom">
+            <a href="mailto:marianacarvalho20166@gmail.com" class="side-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/marianacarvalho20166-cpu" target="_blank" rel="noopener noreferrer" class="side-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <header class="mobile-header" id="mobileHeader">
+        <span class="monogram">MG</span>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero -->
+        <section class="hero" id="inicio">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-label">Portfólio Profissional</div>
+                    <h1 class="hero-title">
+                        Mariana<br>
+                        Gomes<br>
+                        <em>Carvalho</em>
+                    </h1>
+                    <p class="hero-subtitle">Profissional comprometida com excelência e resultados. Postura corporativa, visão estratégica e foco no crescimento contínuo.</p>
+                    <div class="hero-cta">
+                        <a href="#contato" class="cta-btn">
+                            Entrar em contato
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#sobre" class="cta-link">
+                            Saiba mais <span class="line"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="photo-container">
+                        <div class="photo-accent"></div>
+                        <img src="perfil.jpg" alt="Mariana Gomes Carvalho" class="hero-photo">
+                        <div class="photo-tag">
+                            <span class="tag-dot"></span>
+                            Disponível para oportunidades
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section class="section" id="sobre">
+            <div class="section-grid">
+                <div class="section-label-col">
+                    <span class="vertical-label">Sobre mim</span>
+                    <span class="section-number">01</span>
+                </div>
+                <div class="section-content-col">
+                    <h2 class="section-heading">Dedicação e<br><em>profissionalismo</em></h2>
+                    <div class="about-blocks">
+                        <div class="about-block" data-reveal>
+                            <div class="block-number">01</div>
+                            <h3>Perfil</h3>
+                            <p>Sou Mariana Gomes Carvalho, uma profissional que valoriza a postura ética, o comprometimento e a busca por resultados. Com perfil corporativo e determinado, encaro cada desafio como uma oportunidade de crescimento.</p>
+                        </div>
+                        <div class="about-block" data-reveal>
+                            <div class="block-number">02</div>
+                            <h3>Visão</h3>
+                            <p>Acredito que a combinação de competência técnica e inteligência emocional é essencial para alcançar o sucesso profissional. Busco ambientes que valorizem a meritocracia e o trabalho em equipe.</p>
+                        </div>
+                        <div class="about-block" data-reveal>
+                            <div class="block-number">03</div>
+                            <h3>Motivação</h3>
+                            <p>Minha motivação é contribuir de forma significativa nas organizações em que atuo, trazendo soluções práticas e inovadoras para os desafios do dia a dia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência -->
+        <section class="section section-dark" id="experiencia">
+            <div class="section-grid">
+                <div class="section-label-col">
+                    <span class="vertical-label light">Trajetória</span>
+                    <span class="section-number light">02</span>
+                </div>
+                <div class="section-content-col">
+                    <h2 class="section-heading light">Experiência &<br><em>Formação</em></h2>
+                    <div class="exp-list">
+                        <div class="exp-item" data-reveal>
+                            <div class="exp-line"></div>
+                            <div class="exp-header">
+                                <span class="exp-period">Atual</span>
+                                <h3>Atuação Profissional</h3>
+                            </div>
+                            <p>Experiência prática em ambiente corporativo, desenvolvendo competências de gestão, organização e relacionamento interpessoal.</p>
+                        </div>
+                        <div class="exp-item" data-reveal>
+                            <div class="exp-line"></div>
+                            <div class="exp-header">
+                                <span class="exp-period">Formação</span>
+                                <h3>Graduação</h3>
+                            </div>
+                            <p>Formação acadêmica sólida, com foco no desenvolvimento de habilidades teóricas e práticas aplicáveis ao mercado de trabalho.</p>
+                        </div>
+                        <div class="exp-item" data-reveal>
+                            <div class="exp-line"></div>
+                            <div class="exp-header">
+                                <span class="exp-period">Contínuo</span>
+                                <h3>Desenvolvimento Profissional</h3>
+                            </div>
+                            <p>Participação ativa em cursos, treinamentos e eventos que promovem atualização e aprimoramento de competências.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="section" id="habilidades">
+            <div class="section-grid">
+                <div class="section-label-col">
+                    <span class="vertical-label">Competências</span>
+                    <span class="section-number">03</span>
+                </div>
+                <div class="section-content-col">
+                    <h2 class="section-heading">Habilidades<br><em>& Competências</em></h2>
+                    <div class="skills-list">
+                        <div class="skill-row" data-reveal>
+                            <div class="skill-name">Liderança</div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                            <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-row" data-reveal>
+                            <div class="skill-name">Gestão de Tempo</div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                            <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-row" data-reveal>
+                            <div class="skill-name">Comunicação</div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="95"></div>
+                            </div>
+                            <div class="skill-value">95%</div>
+                        </div>
+                        <div class="skill-row" data-reveal>
+                            <div class="skill-name">Trabalho em Equipe</div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="92"></div>
+                            </div>
+                            <div class="skill-value">92%</div>
+                        </div>
+                        <div class="skill-row" data-reveal>
+                            <div class="skill-name">Informática</div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                            <div class="skill-value">75%</div>
+                        </div>
+                        <div class="skill-row" data-reveal>
+                            <div class="skill-name">Organização</div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="88"></div>
+                            </div>
+                            <div class="skill-value">88%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="section section-dark" id="contato">
+            <div class="section-grid">
+                <div class="section-label-col">
+                    <span class="vertical-label light">Contato</span>
+                    <span class="section-number light">04</span>
+                </div>
+                <div class="section-content-col">
+                    <h2 class="section-heading light">Vamos<br><em>conversar?</em></h2>
+                    <p class="contact-intro">Estou disponível para novas oportunidades e conexões profissionais. Entre em contato:</p>
+                    <div class="contact-grid">
+                        <a href="mailto:marianacarvalho20166@gmail.com" class="contact-item" data-reveal>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">E-mail</span>
+                                <span class="contact-value">marianacarvalho20166@gmail.com</span>
+                            </div>
+                            <i class="fas fa-arrow-up-right-from-square contact-arrow"></i>
+                        </a>
+                        <a href="https://github.com/marianacarvalho20166-cpu" target="_blank" rel="noopener noreferrer" class="contact-item" data-reveal>
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">marianacarvalho20166-cpu</span>
+                            </div>
+                            <i class="fas fa-arrow-up-right-from-square contact-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <span class="footer-name">Mariana Gomes Carvalho</span>
+                <span class="footer-copy">&copy; 2026</span>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
