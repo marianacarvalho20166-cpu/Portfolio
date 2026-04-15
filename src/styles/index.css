@@ -996,3 +996,9 @@ img {
         font-size: 1.3rem;
     }
 }
+
+/* React: garantir visibilidade */
+.about-block, .exp-item, .skill-row, .contact-item, [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+}
