@@ -116,3 +116,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// --- Renderização dinâmica de Projetos ---
+const projetos = [
+    { id: 1, titulo: 'Projeto Acadêmico', descricao: 'Trabalho em grupo durante o curso, com foco em pesquisa, estruturação de argumentos e apresentação.', tags: ['Pesquisa', 'Grupo', 'Análise'] },
+    { id: 2, titulo: 'Ação Voluntária', descricao: 'Participação em iniciativa comunitária, desenvolvendo empatia e senso de responsabilidade social.', tags: ['Voluntariado', 'Empatia', 'Impacto'] },
+    { id: 3, titulo: 'Desenvolvimento Contínuo', descricao: 'Envolvimento em cursos e capacitações para evolução constante das competências profissionais.', tags: ['Aprendizado', 'Crescimento'] },
+];
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('projetosContainer');
+    if (!container) return;
+    projetos.forEach((p, i) => {
+        const card = document.createElement('div');
+        card.className = 'projeto-item';
+        card.setAttribute('data-reveal', '');
+        card.innerHTML = `
+            <span class="projeto-num">0${i + 1}</span>
+            <div class="projeto-body">
+                <h3 class="projeto-titulo">${p.titulo}</h3>
+                <p class="projeto-descricao">${p.descricao}</p>
+                <div class="projeto-tags">${p.tags.map(t => `<span class="projeto-tag">${t}</span>`).join('')}</div>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+});

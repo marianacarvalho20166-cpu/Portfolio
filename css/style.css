@@ -996,3 +996,46 @@ img {
         font-size: 1.3rem;
     }
 }
+
+/* Projetos main/HTML */
+.projetos-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.projeto-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 2rem;
+    padding: 1.8rem 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    align-items: start;
+}
+.projeto-num {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 2rem;
+    color: #8a6d47;
+    line-height: 1;
+}
+.projeto-body h3.projeto-titulo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+.projeto-descricao {
+    color: #6b6b6b;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+.projeto-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.projeto-tag {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.8rem;
+    background: rgba(138, 109, 71, 0.1);
+    color: #8a6d47;
+    border-radius: 100px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
